@@ -1,13 +1,21 @@
 {
-    "name": "image-processing-node",
-    "version": "1.0.0",
-    "description": "Image processing tool using Node.js",
-    "main": "image-processing.js",
-    "scripts": {
-        "start": "node image-processing.js"
-    },
-    "dependencies": {
-        "sharp": "^0.33.2",
-        "axios": "^1.6.7"
-    }
+  "name": "image-processing-service",
+  "version": "1.1.0",
+  "description": "A Node.js service for processing images using Sharp, including text overlays, with Ocean Protocol integration.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "process-image": "node image-processing.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.4",
+    "@oceanprotocol/lib": "^3.2.0"
+  },
+  "author": "Your Name",
+  "license": "ISC"
 }
